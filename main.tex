@@ -1,0 +1,75 @@
+\documentclass{article}
+
+\input{utils/packages.tex}
+
+\input{utils/MATLAB_theme.tex}
+
+\input{utils/settings.tex}
+
+\title{\vspace{160px} \textbf{\huge{Analysis and simulation of a digital transmission system}}}
+\author{\Large{\href{https://github.com/imAlessas}{Alessandro Trigolo}}}
+\date{2023/2024}
+
+
+\def\analysis{1}
+\def\simulation{1}
+
+
+
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents \newpage
+
+
+\input{chapters/introduction.tex}
+
+
+\if\analysis1
+    \newpage\newpage \part{Analysis}
+
+    \input{chapters/analysis/source-data.tex} % Task 2
+
+    \input{chapters/analysis/source-encoding.tex} % Task 3
+
+    \input{chapters/analysis/shannon-theorem.tex} % Task 4
+
+    \input{chapters/analysis/cyclic-coding.tex} % Task 5
+    
+    \input{chapters/analysis/BER-plot.tex} % Task 6
+
+    \input{chapters/analysis/signal-spectrum.tex} % Task 7
+    
+    \input{chapters/analysis/uncorrectable-errors.tex} % Task 8
+
+    \input{chapters/analysis/raw-results.tex} % Summary
+\fi
+
+
+
+\if\simulation1
+    \newpage\newpage \part{Simulation}
+
+    \input{chapters/simulation/data-generation.tex}
+
+    \input{chapters/simulation/source-coding.tex}
+
+    \input{chapters/simulation/padding-bits.tex}
+
+    \input{chapters/simulation/channel-coding.tex}
+
+    \input{chapters/simulation/interleaving.tex}
+
+    \input{chapters/simulation/scrambling.tex}
+
+    \input{chapters/simulation/modulation.tex}
+
+    \input{chapters/simulation/test.tex}
+\fi
+
+
+\end{document}
