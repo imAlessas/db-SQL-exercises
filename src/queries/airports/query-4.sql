@@ -1,12 +1,13 @@
 /* For flight with ID 13, list the day of the week, the departure country, and the arrival country. */
 
-SELECT *
+SELECT
     DayOfWeek AS "Day of week",
-    Country AS "Departure country",
-    Country AS "Arrival Country"
+    DepartureCity.Country AS "Departure country",
+    ArrivalCityName.Country AS "Arrival Country"
 FROM 
     FLIGHTS
-    INNER JOIN CITIES ON CITIES.CityName = FLIGHTS.DepartureCityName
+    INNER JOIN CITIES AS DepartureCity ON DepartureCity.CityName = FLIGHTS.DepartureCityName
+    INNER JOIN CITIES AS ArrivalCityName ON ArrivalCityName.CityName = FLIGHTS.ArrivalCityName
 WHERE
-    FlightId = 13;
+    FlightId = 15;
 
