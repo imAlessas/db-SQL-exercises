@@ -20,25 +20,26 @@ CREATE TABLE CITIES (
 -- Inserting 20 rows of cities
 INSERT INTO CITIES (CityName, Country) VALUES
 ('New York', 'USA'),
-('London', 'UK'),
-('Tokyo', 'JPN'),
-('Paris', 'FRA'),
-('Sydney', 'AUS'),
 ('Los Angeles', 'USA'),
-('Berlin', 'GER'),
+('London', 'GBR'),
+('Manchester', 'GBR'),
+('Paris', 'FRA'),
+('Marseille', 'FRA'),
+('Berlin', 'DEU'),
+('Hamburg', 'DEU'),
 ('Rome', 'ITA'),
-('Beijing', 'CHN'),
-('Moscow', 'RUS'),
+('Milan', 'ITA'),
+('Sydney', 'AUS'),
+('Melbourne', 'AUS'),
+('Tokyo', 'JPN'),
+('Osaka', 'JPN'),
 ('Toronto', 'CAN'),
+('Vancouver', 'CAN'),
 ('Madrid', 'ESP'),
-('Dubai', 'UAE'),
+('Barcelona', 'ESP'),
 ('Singapore', 'SGP'),
-('Hong Kong', 'HKG'),
-('Seoul', 'KOR'),
-('Mumbai', 'IND'),
-('Bangkok', 'THA'),
-('Istanbul', 'TUR'),
-('Mexico City', 'MEX');
+('Bangkok', 'THA');
+
 
 
 
@@ -88,7 +89,7 @@ BEGIN
         SELECT CityName FROM CITIES 
         LOOP
             -- Loop to insert 5 flights for each departure city
-            FOR i IN 1..50 LOOP
+            FOR i IN 1..25 LOOP
                 -- Select random arrival city
                 SELECT CityName INTO arrival_city_name
                 FROM CITIES
