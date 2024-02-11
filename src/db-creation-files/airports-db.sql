@@ -88,7 +88,7 @@ BEGIN
         SELECT CityName FROM CITIES 
         LOOP
             -- Loop to insert 5 flights for each departure city
-            FOR i IN 1..5 LOOP
+            FOR i IN 1..50 LOOP
                 -- Select random arrival city
                 SELECT CityName INTO arrival_city_name
                 FROM CITIES
