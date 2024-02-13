@@ -44,19 +44,18 @@ CREATE TABLE SONG_SINGERS (
 
 /* Inserts have been AI-generated. */
 
+
+/* ASTROWORLD */
+
 -- Inserts for the PEOPLE table
-INSERT INTO PEOPLE (PersonName, BirthYear) VALUES('Mike Dean', NULL),
-('WondaGurl', NULL),
-('Gunna', NULL),
-('Don Toliver', NULL),
-('Sheck Wes', NULL),
-('Philip Bailey', NULL),
-('James Blake', NULL),
+INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
+('Travis Scott', 1991),
 ('Kid Cudi', 1984),
-('The Weeknd', NULL),
-('Stevie Wonder', NULL),
-('Swae Lee', NULL),
-('Juice Wrld', NULL);
+('Philip Bailey', 1951),
+('James Blake', 1988),
+('The Weeknd', 1990),
+('Swae Lee', 1993),
+('Juice Wrld', 1998);
 
 -- Inserts for the ALBUMS table
 INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('ASTROWORLD', 2018);
@@ -103,69 +102,69 @@ INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
 
 -- Inserts for the SONG_AUTHORS table
 INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
-('Travis Scott', 1),
-('Travis Scott', 2),
-('Travis Scott', 3),
-('Travis Scott', 4),
-('Travis Scott', 5),
-('Travis Scott', 6),
-('Travis Scott', 7),
-('Travis Scott', 8),
-('Travis Scott', 9),
-('Travis Scott', 10),
-('Travis Scott', 11),
-('Travis Scott', 12),
-('Travis Scott', 13),
-('Travis Scott', 14),
-('Travis Scott', 15),
-('Travis Scott', 16),
-('Travis Scott', 17);
+('Travis Scott', 1),  -- STARGAZING
+('Travis Scott', 2),  -- CAROUSEL
+('Travis Scott', 3),  -- SICKO MODE
+('Travis Scott', 4),  -- R.I.P. SCREW
+('Travis Scott', 5),  -- STOP TRYING TO BE GOD
+('Travis Scott', 6),  -- NO BYSTANDERS
+('Travis Scott', 7),  -- SKELETONS
+('Travis Scott', 8),  -- WAKE UP
+('Travis Scott', 9),  -- 5% TINT
+('Travis Scott', 10), -- NC-17
+('Travis Scott', 11), -- ASTROTHUNDER
+('Travis Scott', 12), -- YOSEMITE
+('Travis Scott', 13), -- CAN'T SAY
+('Travis Scott', 14), -- WHO? WHAT!
+('Travis Scott', 15), -- BUTTERFLY EFFECT
+('Travis Scott', 16), -- HOUSTONFORNICATION
+('Travis Scott', 17); -- COFFEE BEAN
 
 -- Inserts for the SONG_SINGERS table
 INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
-('Travis Scott', 1),
-('Travis Scott', 2),
-('Travis Scott', 3),
-('Travis Scott', 4),
-('Travis Scott', 5),
-('Travis Scott', 6),
-('Travis Scott', 7),
-('Travis Scott', 8),
-('Travis Scott', 9),
-('Travis Scott', 10),
-('Travis Scott', 11),
-('Travis Scott', 12),
-('Travis Scott', 13),
-('Travis Scott', 14),
-('Travis Scott', 15),
-('Travis Scott', 16),
-('Travis Scott', 17);
+('Travis Scott', 1),  -- STARGAZING
+('Travis Scott', 2),  -- CAROUSEL
+('Travis Scott', 3),  -- SICKO MODE
+('Travis Scott', 4),  -- R.I.P. SCREW
+('Travis Scott', 5),  -- STOP TRYING TO BE GOD
+('Travis Scott', 6),  -- NO BYSTANDERS
+('Travis Scott', 7),  -- SKELETONS
+('Travis Scott', 8),  -- WAKE UP
+('Travis Scott', 9),  -- 5% TINT
+('Travis Scott', 10), -- NC-17
+('Travis Scott', 11), -- ASTROTHUNDER
+('Travis Scott', 12), -- YOSEMITE
+('Travis Scott', 13), -- CAN'T SAY
+('Travis Scott', 14), -- WHO? WHAT!
+('Travis Scott', 15), -- BUTTERFLY EFFECT
+('Travis Scott', 16), -- HOUSTONFORNICATION
+('Travis Scott', 17), -- COFFEE BEAN
+('Kid Cudi', 6),       -- NO BYSTANDERS (collaboration)
+('Philip Bailey', 5),  -- STOP TRYING TO BE GOD (collaboration)
+('James Blake', 7),    -- SKELETONS (collaboration)
+('The Weeknd', 3),     -- SICKO MODE (collaboration)
+('Swae Lee', 12),      -- YOSEMITE (collaboration)
+('Juice Wrld', 13);    -- CAN'T SAY (collaboration)
 
 
+
+
+
+
+
+/* Scorpion */
 
 -- Inserts for the PEOPLE table
+
 INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
-('Drake', 1986),
+ ('Drake', 1986),
 ('Michael Jackson', 1958),
 ('Paul Anka', 1941),
-('Noel Cadastre', NULL),
-('Noah "40" Shebib', NULL),
-('PARTYNEXTDOOR', NULL),
-('Ty Dolla $ign', NULL),
-('Static Major', 1974),
-('James Fauntleroy', NULL),
-('Mariah Carey', 1969),
-('Big Freedia', 1978),
-('JAY-Z', 1969),
-('Nicki Minaj', 1982),
+('Noel Cadastre', 1991),
 ('Future', 1983),
-('James Smith', NULL),
-('Tyrone William Griffin Jr.', NULL),
-('Kenneth "Babyface" Edmonds', 1959),
-('Graham Nash', 1942),
-('Oliver El-Khatib', NULL),
-('Michael Gazzo', NULL),
-('Stéphane Mgebrishvili', NULL);
+('Static Major', 1974),
+('Ty Dolla $ign', 1982);
+
 
 -- Inserts for the ALBUMS table
 INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('Scorpion', 2018);
@@ -228,87 +227,80 @@ INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
 
 -- Inserts for the SONG_AUTHORS table
 INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
-('Drake', 18),
-('Drake', 19),
-('Drake', 20),
-('Drake', 21),
-('Drake', 22),
-('Drake', 23),
-('Drake', 24),
-('Drake', 25),
-('Drake', 26),
-('Drake', 27),
-('Drake', 28),
-('Drake', 29),
-('Drake', 30),
-('Drake', 31),
-('Drake', 32),
-('Drake', 33),
-('Drake', 34),
-('Drake', 35),
-('Drake', 36),
-('Drake', 37),
-('Drake', 38),
-('Drake', 39),
-('Drake', 40),
-('Drake', 41),
-('Drake', 42);
+('Drake', 18),  -- Survival
+('Drake', 19),  -- Nonstop
+('Drake', 20),  -- Elevate
+('Drake', 21),  -- Emotionless
+('Drake', 22),  -- God's Plan
+('Drake', 23),  -- I'm Upset
+('Drake', 24),  -- 8 Out Of 10
+('Drake', 25),  -- Mob Ties
+('Drake', 26),  -- Can't Take A Joke
+('Drake', 27),  -- Sandra's Rose
+('Drake', 28),  -- Talk Up
+('Drake', 29),  -- Is There More
+('Drake', 30),  -- Peak
+('Drake', 31),  -- Summer Games
+('Drake', 32),  -- Jaded
+('Drake', 33),  -- Nice For What
+('Drake', 34),  -- Finesse
+('Drake', 35),  -- Ratchet Happy Birthday
+('Drake', 36),  -- That's How You Feel
+('Drake', 37),  -- Blue Tint
+('Drake', 38),  -- In My Feelings
+('Drake', 39),  -- Don't Matter To Me
+('Drake', 40),  -- After Dark
+('Drake', 41),  -- Final Fantasy
+('Drake', 42);  -- March 14
 
 -- Inserts for the SONG_SINGERS table
 INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
-('Drake', 18),
-('Drake', 19),
-('Drake', 20),
-('Drake', 21),
-('Drake', 22),
-('Drake', 23),
-('Drake', 24),
-('Drake', 25),
-('Drake', 26),
-('Drake', 27),
-('Drake', 28),
-('Drake', 29),
-('Drake', 30),
-('Drake', 31),
-('Drake', 32),
-('Drake', 33),
-('Drake', 34),
-('Drake', 35),
-('Drake', 36),
-('Drake', 37),
-('Drake', 38),
-('Drake', 39),
-('Drake', 40),
-('Drake', 41),
-('Drake', 42);
+('Drake', 18),  -- Survival
+('Drake', 19),  -- Nonstop
+('Drake', 20),  -- Elevate
+('Drake', 21),  -- Emotionless
+('Drake', 22),  -- God's Plan
+('Drake', 23),  -- I'm Upset
+('Drake', 24),  -- 8 Out Of 10
+('Drake', 25),  -- Mob Ties
+('Drake', 26),  -- Can't Take A Joke
+('Drake', 27),  -- Sandra's Rose
+('Drake', 28),  -- Talk Up
+('Drake', 29),  -- Is There More
+('Drake', 30),  -- Peak
+('Drake', 31),  -- Summer Games
+('Drake', 32),  -- Jaded
+('Drake', 33),  -- Nice For What
+('Drake', 34),  -- Finesse
+('Drake', 35),  -- Ratchet Happy Birthday
+('Drake', 36),  -- That's How You Feel
+('Drake', 37),  -- Blue Tint
+('Drake', 38),  -- In My Feelings
+('Drake', 39),  -- Don't Matter To Me
+('Drake', 40),  -- After Dark
+('Drake', 41),  -- Final Fantasy
+('Drake', 42),  -- March 14
+('Michael Jackson', 39),  -- Don't Matter To Me (collaboration)
+('Paul Anka', 39),          -- Don't Matter To Me (collaboration)
+('Noel Cadastre', 39),          -- Don't Matter To Me (collaboration)
+('Future', 40),          -- After Dark (collaboration)
+('Static Major', 39),          -- Don't Matter To Me (collaboration)
+('Ty Dolla $ign', 40);          -- After Dark (collaboration)
 
 
+
+
+
+
+
+/* Rodeo */
 
 -- Inserts for the PEOPLE table
 INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
-('Travis Scott', 1991),
 ('Kanye West', 1977),
-('Allen Ritter', NULL),
-('Mike Dean', NULL),
-('Metro Boomin', 1993),
-('Sonny Digital', NULL),
-('WondaGurl', NULL),
-('Illangelo', NULL),
-('DJ Dahi', NULL),
-('Zach Nahome', NULL),
-('Bun B', 1973),
-('Juicy J', 1975),
-('Swae Lee', NULL),
-('Chief Keef', 1995),
-('The Weeknd', NULL),
-('2 Chainz', 1977),
 ('Quavo', 1991),
-('Young Thug', 1991),
-('Justin Bieber', 1994),
-('T.I.', 1980),
-('Future', 1983),
-('Schoolboy Q', 1986),
-('Big Buck$', NULL);
+('PARTYNEXTDOOR', 1993),
+('Justin Bieber', 1994);
 
 -- Inserts for the ALBUMS table
 INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('Rodeo', 2015);
@@ -323,7 +315,7 @@ INSERT INTO SONGS (SongTitle, SongYear) VALUES
 ('Pray 4 Love', 2015),
 ('Nightcrawler', 2015),
 ('Piss On Your Grave', 2015),
-('Antidote', 2015),
+('Antidote', NULL),
 ('Impossible', 2015),
 ('Maria Im Drunk', 2015),
 ('Flying High', 2015),
@@ -351,36 +343,313 @@ INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
 
 -- Inserts for the SONG_AUTHORS table
 INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
-('Travis Scott', 43),
-('Travis Scott', 44),
-('Travis Scott', 45),
-('Travis Scott', 46),
-('Travis Scott', 47),
-('Travis Scott', 48),
-('Travis Scott', 49),
-('Travis Scott', 50),
-('Travis Scott', 51),
-('Travis Scott', 52),
-('Travis Scott', 53),
-('Travis Scott', 54),
-('Travis Scott', 55),
-('Travis Scott', 56),
-('Travis Scott', 57);
+('Travis Scott', 43),  -- Pornography
+('Travis Scott', 44),  -- Oh My Dis Side
+('Travis Scott', 45),  -- 3500
+('Travis Scott', 46),  -- Wasted
+('Travis Scott', 47),  -- 90210
+('Travis Scott', 48),  -- Pray 4 Love
+('Travis Scott', 49),  -- Nightcrawler
+('Travis Scott', 50),  -- Piss On Your Grave
+('Travis Scott', 51),  -- Antidote
+('Travis Scott', 52),  -- Impossible
+('Travis Scott', 53),  -- Maria I'm Drunk
+('Travis Scott', 54),  -- Flying High
+('Travis Scott', 55),  -- I Can Tell
+('Travis Scott', 56),  -- Apple Pie
+('Travis Scott', 57);  -- Ok Alright
 
 -- Inserts for the SONG_SINGERS table
 INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
-('Travis Scott', 43),
-('Travis Scott', 44),
-('Travis Scott', 45),
-('Travis Scott', 46),
-('Travis Scott', 47),
-('Travis Scott', 48),
-('Travis Scott', 49),
-('Travis Scott', 50),
-('Travis Scott', 51),
-('Travis Scott', 52),
-('Travis Scott', 53),
-('Travis Scott', 54),
-('Travis Scott', 55),
-('Travis Scott', 56),
-('Travis Scott', 57);
+('Travis Scott', 43),  -- Pornography
+('Travis Scott', 44),  -- Oh My Dis Side
+('Travis Scott', 45),  -- 3500
+('Travis Scott', 46),  -- Wasted
+('Travis Scott', 47),  -- 90210
+('Travis Scott', 48),  -- Pray 4 Love
+('Travis Scott', 49),  -- Nightcrawler
+('Travis Scott', 50),  -- Piss On Your Grave
+('Travis Scott', 51),  -- Antidote
+('Travis Scott', 52),  -- Impossible
+('Travis Scott', 53),  -- Maria I'm Drunk
+('Travis Scott', 54),  -- Flying High
+('Travis Scott', 55),  -- I Can Tell
+('Travis Scott', 56),  -- Apple Pie
+('Travis Scott', 57),  -- Ok Alright
+('Kanye West', 43),     -- Pornography (collaboration)
+('Quavo', 45),          -- 3500 (collaboration)
+('Future', 46),         -- Wasted (collaboration)
+('Future', 49),         -- Nightcrawler (collaboration)
+('The Weeknd', 47),     -- 90210 (collaboration)
+('PARTYNEXTDOOR', 51),  -- Antidote (collaboration)
+('Justin Bieber', 53),  -- Maria I'm Drunk (collaboration)
+('Justin Bieber', 56);  -- Apple Pie (collaboration)
+
+
+
+
+
+
+/* Birds in the Trap sing McKnight */
+
+-- Inserts for the PEOPLE table
+INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
+('Blac Youngsta', 1990),
+('21 Savage', 1992),
+('Young Thug', 1991),
+('Cassie', 1986),
+('Bryson Tiller', 1993);
+
+-- Inserts for the ALBUMS table
+INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('Birds in the Trap Sing McKnight', 2016);
+
+-- Inserts for the SONGS table
+INSERT INTO SONGS (SongTitle, SongYear) VALUES
+('the ends', 2016),
+('way back', 2016),
+('coordinate', 2016),
+('through the late night', 2016),
+('Biebs in the trap', 2016),
+('SDP interlude', 2016),
+('sweet sweet', 2016),
+('outside', 2016),
+('goosebumps', 2016),
+('first take', 2016),
+('pick up the phone', 2016),
+('lose', 2016),
+('guidance', 2016),
+('wonderful', 2016);
+
+-- Inserts for the ALBUM_SONGS table
+INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
+(4, 1, 58),
+(4, 2, 59),
+(4, 3, 60),
+(4, 4, 61),
+(4, 5, 62),
+(4, 6, 63),
+(4, 7, 64),
+(4, 8, 65),
+(4, 9, 66),
+(4, 10, 67),
+(4, 11, 68),
+(4, 12, 69),
+(4, 13, 70),
+(4, 14, 71);
+
+-- Inserts for the SONG_AUTHORS table
+INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
+('Travis Scott', 58),  -- the ends
+('Travis Scott', 59),  -- way back
+('Travis Scott', 60),  -- coordinate
+('Travis Scott', 61),  -- through the late night
+('Travis Scott', 62),  -- Biebs in the trap
+('Travis Scott', 63),  -- SDP interlude
+('Travis Scott', 64),  -- sweet sweet
+('Travis Scott', 65),  -- outside
+('Travis Scott', 66),  -- goosebumps
+('Travis Scott', 67),  -- first take
+('Travis Scott', 68),  -- pick up the phone
+('Travis Scott', 69),  -- lose
+('Travis Scott', 70),  -- guidance
+('Travis Scott', 71);  -- wonderful
+
+-- Inserts for the SONG_SINGERS table
+INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
+('Travis Scott', 58),  -- the ends
+('Travis Scott', 59),  -- way back
+('Travis Scott', 60),  -- coordinate
+('Travis Scott', 61),  -- through the late night
+('Travis Scott', 62),  -- Biebs in the trap
+('Travis Scott', 63),  -- SDP interlude
+('Travis Scott', 64),  -- sweet sweet
+('Travis Scott', 65),  -- outside
+('Travis Scott', 66),  -- goosebumps
+('Travis Scott', 67),  -- first take
+('Travis Scott', 68),  -- pick up the phone
+('Travis Scott', 69),  -- lose
+('Travis Scott', 70),  -- guidance
+('Travis Scott', 71),  -- wonderful
+('Kid Cudi', 61),      -- through the late night (collaboration)
+('Kid Cudi', 68),      -- pick up the phone (collaboration)
+('Kid Cudi', 69),      -- lose (collaboration)
+('Swae Lee', 62),      -- Biebs in the trap (collaboration)
+('Blac Youngsta', 63), -- SDP interlude (collaboration)
+('The Weeknd', 66),    -- goosebumps (collaboration)
+('21 Savage', 67),     -- first take (collaboration)
+('Young Thug', 68),    -- pick up the phone (collaboration)
+('Quavo', 68),         -- pick up the phone (collaboration)
+('Cassie', 69),        -- lose (collaboration)
+('Bryson Tiller', 70), -- guidance (collaboration)
+('The Weeknd', 71);    -- wonderful (collaboration)
+
+
+
+
+
+/* IGOR */
+
+-- Inserts for the PEOPLE table
+INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
+('Tyler, The Creator', 1991),
+('Playboi Carti', 1996),
+('Santigold', 1976),
+('Charlie Wilson', 1953),
+('Jessy Wilson', 1992),
+('Jerrod Carmichael', 1987),
+('CeeLo Green', 1974),
+('La Roux', 1988);
+
+-- Inserts for the ALBUMS table
+INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('IGOR', 2019);
+
+-- Inserts for the SONGS table
+INSERT INTO SONGS (SongTitle, SongYear) VALUES
+('IGOR`S THEME', 2019),
+('EARFQUAKE', 2019),
+('I THINK', 2019),
+('RUNNING OUT OF TIME', 2019),
+('NEW MAGIC WAND', 2019),
+('A BOY IS A GUN*', 2019),
+('PUPPET', 2019),
+('WHAT`S GOOD', 2019),
+('GONE, GONE / THANK YOU', 2019),
+('I DON`T LOVE YOU ANYMORE', 2019),
+('ARE WE STILL FRIENDS?', 2019);
+
+-- Inserts for the ALBUM_SONGS table
+INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
+(5, 1, 72),
+(5, 2, 73),
+(5, 3, 74),
+(5, 4, 75),
+(5, 5, 76),
+(5, 6, 77),
+(5, 7, 78),
+(5, 8, 79),
+(5, 9, 80),
+(5, 10, 81),
+(5, 11, 82);
+
+-- Inserts for the SONG_AUTHORS table
+INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
+('Tyler, The Creator', 72), -- IGOR'S THEME
+('Tyler, The Creator', 73), -- EARFQUAKE
+('Tyler, The Creator', 74), -- I THINK
+('Tyler, The Creator', 75), -- RUNNING OUT OF TIME
+('Tyler, The Creator', 76), -- NEW MAGIC WAND
+('Tyler, The Creator', 77), -- A BOY IS A GUN*
+('Tyler, The Creator', 78), -- PUPPET
+('Tyler, The Creator', 79), -- WHAT'S GOOD
+('Tyler, The Creator', 80), -- GONE, GONE / THANK YOU
+('Tyler, The Creator', 81), -- I DON'T LOVE YOU ANYMORE
+('Tyler, The Creator', 82); -- ARE WE STILL FRIENDS?
+
+-- Inserts for the SONG_SINGERS table (including collaborations)
+INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
+('Tyler, The Creator', 72), -- IGOR'S THEME
+('Tyler, The Creator', 73), -- EARFQUAKE
+('Tyler, The Creator', 74), -- I THINK
+('Tyler, The Creator', 75), -- RUNNING OUT OF TIME
+('Tyler, The Creator', 76), -- NEW MAGIC WAND
+('Tyler, The Creator', 77), -- A BOY IS A GUN*
+('Tyler, The Creator', 78), -- PUPPET
+('Tyler, The Creator', 79), -- WHAT'S GOOD
+('Tyler, The Creator', 80), -- GONE, GONE / THANK YOU
+('Tyler, The Creator', 81), -- I DON'T LOVE YOU ANYMORE
+('Tyler, The Creator', 82), -- ARE WE STILL FRIENDS?
+('Playboi Carti', 73),       -- EARFQUAKE (collaboration)
+('Santigold', 76),           -- NEW MAGIC WAND (collaboration)
+('Charlie Wilson', 77),      -- A BOY IS A GUN* (collaboration)
+('Jessy Wilson', 77),        -- A BOY IS A GUN* (collaboration)
+('Jerrod Carmichael', 78),   -- PUPPET (collaboration)
+('Kanye West', 79),          -- WHAT'S GOOD (collaboration)
+('CeeLo Green', 80),         -- GONE, GONE / THANK YOU (collaboration)
+('La Roux', 81);             -- I DON'T LOVE YOU ANYMORE (collaboration)
+
+
+
+
+
+/* Flower Boy */
+
+-- Inserts for the PEOPLE table (new names from collaborations)
+INSERT INTO PEOPLE (PersonName, BirthYear) VALUES
+('A$AP Rocky', 1988),
+('Jaden Smith', 1998),
+('Estelle', 1980),
+('Anna of the North', 1989),
+('Frank Ocean', 1987),
+('Lil Wayne', 1982);
+
+-- Inserts for the ALBUMS table
+INSERT INTO ALBUMS (AlbumTitle, AlbumYear) VALUES ('Flower Boy', 2017);
+
+-- Inserts for the SONGS table
+INSERT INTO SONGS (SongTitle, SongYear) VALUES
+('Foreword', 2017),
+('Where This Flower Blooms', 2017),
+('Sometimes...', 2017),
+('See You Again', 2017),
+('Who Dat Boy', 2017),
+('Pothole', 2017),
+('Garden Shed', 2017),
+('Boredom', 2017),
+('I Ain`t Got Time!', 2017),
+('911 / Mr. Lonely', 2017),
+('Droppin` Seeds', 2017),
+('November', 2017);
+
+-- Inserts for the ALBUM_SONGS table
+INSERT INTO ALBUM_SONGS (AlbumId, TrackId, SongId) VALUES
+(6, 1, 83),
+(6, 2, 84),
+(6, 3, 85),
+(6, 4,86),
+(6, 5,87),
+(6, 6,  88),
+(6, 7, 89),
+(6, 8, 90),
+(6, 9, 91),
+(6, 10, 92),
+(6, 11, 93),
+(6, 12, 94);
+
+-- Inserts for the SONG_AUTHORS table
+INSERT INTO SONG_AUTHORS (PersonName, SongId) VALUES
+('Tyler, The Creator', 83),  -- Foreword
+('Tyler, The Creator', 84),  -- Where This Flower Blooms
+('Tyler, The Creator', 85),  -- Sometimes...
+('Tyler, The Creator',86),  -- See You Again
+('Tyler, The Creator', 87),  -- Who Dat Boy
+('Tyler, The Creator',  88), -- Pothole
+('Tyler, The Creator', 89), -- Garden Shed
+('Tyler, The Creator', 90), -- Boredom
+('Tyler, The Creator', 91), -- I Ain't Got Time!
+('Tyler, The Creator', 92), -- 911 / Mr. Lonely
+('Tyler, The Creator', 93), -- Droppin' Seeds
+('Tyler, The Creator', 94); -- November
+
+-- Inserts for the SONG_SINGERS table
+INSERT INTO SONG_SINGERS (PersonName, SongId) VALUES
+('Tyler, The Creator', 83),  -- Foreword
+('Tyler, The Creator', 84),  -- Where This Flower Blooms
+('Tyler, The Creator', 85),  -- Sometimes...
+('Tyler, The Creator',86),  -- See You Again
+('Tyler, The Creator', 87),  -- Who Dat Boy
+('Tyler, The Creator',  88), -- Pothole
+('Tyler, The Creator', 89), -- Garden Shed
+('Tyler, The Creator', 90), -- Boredom
+('Tyler, The Creator', 91), -- I Ain't Got Time!
+('Tyler, The Creator', 92), -- 911 / Mr. Lonely
+('Tyler, The Creator', 93), -- Droppin' Seeds
+('Tyler, The Creator', 94), -- November
+('A$AP Rocky',86),          -- See You Again (collaboration)
+('Jaden Smith',  88),        -- Pothole (collaboration)
+('Estelle', 89),            -- Garden Shed (collaboration)
+('Anna of the North', 90),  -- Boredom (collaboration)
+('Frank Ocean', 91),        -- I Ain't Got Time! (collaboration)
+('Frank Ocean', 92),        -- 911 / Mr. Lonely (collaboration)
+('Lil Wayne', 93);          -- Droppin' Seeds (collaboration)
+
+
