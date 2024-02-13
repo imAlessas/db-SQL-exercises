@@ -20,20 +20,18 @@ SELECT
     ALBUM_SONGS.AlbumId AS "Album"
 FROM
     ALBUM_SONGS
-WHERE
-
-
-SELECT
-    maxtracks."Album" AS "Album",
-    MAX(maxtracks.Tracks)
-FROM (
-    SELECT
-        ALBUM_SONGS.AlbumId AS "Album",
-        COUNT(ALBUM_SONGS.SongId) AS "Tracks"
-    FROM
-        ALBUM_SONGS
-    GROUP BY
-        ALBUM_SONGS.AlbumId
-) AS maxtracks;
-
-
+GROUP BY
+    ALBUM_SONGS.AlbumId
+HAVING
+    COUNT(ALBUM_SONGS.SongId) = (
+        SELECT
+            MAX("Tracks")
+        FROM (
+            SELECT
+                COUNT(ALBUM_SONGS.SongId) AS "Tracks"
+            FROM
+                ALBUM_SONGS
+            GROUP BY
+                ALBUM_SONGS.AlbumId
+        )
+    );
