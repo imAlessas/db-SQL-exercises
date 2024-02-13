@@ -1,5 +1,7 @@
 # Exercises using SQL
 
+In this repository are listed some of the SQL exercises used in preparation for the _Database 1_ exam at the University of Padova.
+
 ## Airports
 
 The first database contains three tables: _Cities_, _Airplane\_Types_ and _Flights_ and it is structured as follows:
@@ -10,6 +12,7 @@ The first database contains three tables: _Cities_, _Airplane\_Types_ and _Fligh
 >
 > ___Flights___(__FlightID__, DayOfWeek, _DepartureCityName_, _ArrivalCityName_, _AircraftType_)
 
+The creation of the database can be achieved by running on your DBMS the script shown in [airports-db.sql](src/db-creation-files/airports-db.sql) file, where the tables are created and the inserts are randomly generated.
 
 ### Queries
 
@@ -94,5 +97,7 @@ The second database contains all the tables needed to manage music albums of dif
 > ___Albums___(__AlbumID__, AlbumTile, AlbumYear)
 >
 > ___Album_Songs___(___AlbumID___, __TrackID__, _SongID_)
+
+The creation of the database can be achieved by running on your DBMS the script shown in [music-db.sql](src/db-creation-files/music-db.sql) file.
 
 ### Queries
