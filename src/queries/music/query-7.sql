@@ -27,13 +27,13 @@ FROM
     INNER JOIN SONGS ON ALBUM_SONGS.SongId = SONGS.SongId
     INNER JOIN SONG_SINGERS ON SONGS.SongId = SONG_SINGERS.SongId
 WHERE
-    ALBUM_SONGS.AlbumId = (
+    ALBUM_SONGS.AlbumId IN (
         SELECT
             "Album"
         FROM
             SINGERS_PER_ALBUM
         WHERE
-            "Singers" = 1
+            "Singers" <> 1
     )
 GROUP BY
     SONG_SINGERS.PersonName;
