@@ -44,7 +44,7 @@ _For each flight departing from Rome, list the arrival city and, if available, t
 
 #### [query-7](src/queries/airports/query-7.sql)
 
-_List the cities from which there are direct flights to Osaka, ordered alphabetically._ In this query, the `GROUP` BY` and `ORDER BY` statements are combined
+_List the cities from which there are direct flights to Osaka, ordered alphabetically._ In this query, the `GROUP BY` and `ORDER BY` statements are combined
 
 #### [query-8](src/queries/airports/query-8.sql)
 
@@ -126,11 +126,11 @@ _The identifier of the album that contains the highest number of songs._ This qu
 
 #### [query-6](src/queries/music/query-6.sql)
 
-_The identifiers of the albums containing songs that are all by a single singer and containing at least three songs from years preceding the album's year._ To implement this query uses the `INTERSECT` operator between two othe queries in which there is the `COUNT` operation in the `HAVING` statement.
+_The identifiers of the albums containing songs that are all by a single singer and containing at least three songs from years preceding the album's year._ To implement this query it is used the `INTERSECT` operator between two other queries in which there is the `COUNT` operation in the `HAVING` statement.
 
 #### [query-7](src/queries/music/query-7.sql)
 
-_The names of the singers who have never sung an entire album alone._ In this query a `VIEW` is implemented to improve the readibility of the query.
+_The names of the singers who have never sung an entire album alone._ In this query a `VIEW` is implemented to improve the readability of the query.
 
 #### [query-8](src/queries/music/query-8.sql)
 
@@ -139,7 +139,7 @@ _The names of the singers who have never sung a song as soloists._ This query us
 
 #### [query-9](src/queries/music/query-9.sql)
 
-_The names of the singers who have only sung as soloists._ A similar apporach is used here as well, relying on a `VIEW` and to the `EXCEPT` set operator.
+_The names of the singers who have only sung as soloists._ A similar approach is used here as well, relying on a `VIEW` and to the `EXCEPT` set operator.
 
 #### [query-10](src/queries/music/query-10.sql)
 
