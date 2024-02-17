@@ -16,7 +16,7 @@ The creation of the database can be achieved by running on your DBMS the script 
 
 ### Queries
 
-The following queries are implemented:
+The following queries are implemented. It is strongly recommended to analyze the query code, this list's purpose is to specify the contract utilized in the query but it does not explain the query functioning.
 
 #### [query-1](src/queries/airports/query-1.sql)
 
@@ -101,3 +101,44 @@ The second database contains all the tables needed to manage music albums of dif
 The creation of the database can be achieved by running on your DBMS the script shown in [music-db.sql](src/db-creation-files/music-db.sql) file.
 
 ### Queries
+
+The following queries are implemented. It is strongly recommended to analyze the query code, this list's purpose is to specify the contract utilized in the query but it does not explain the query functioning.
+
+#### [query-1](src/queries/music/query-1.sql)
+
+_The titles of the albums that contain at least one popular song.  A popular song is a song whose publication date is unknown._ In this query, a __nested__ query is utilized-
+
+#### [query-2](src/queries/music/query-2.sql)
+
+_The titles and singers of the songs from the album with identifier 3, sorted by track identifier._ This query has been implemented by the `ORDER BY` construct.
+
+#### [query-3](src/queries/music/query-3.sql)
+
+_The names of individuals whose names start with "T" and who have sung a song written by them._ In this query the `LIKE` construct is used for the first time.
+
+#### [query-4](src/queries/music/query-4.sql)
+
+_The names of the authors who have never sung a song and the names of the singers who have never written a song, listed in a single column._ The query is implemented by the `UNION` set operator and using the construct `NOT IN` and `DISTINCT`.
+
+#### [query-5](src/queries/music/query-5.sql)
+
+_The identifier of the album that contains the highest number of songs._ This query calculates the maximum through 2 nested queries. The first one is used in the `HAVING` statement while the second is used in the `FROM` statement of the first nested query. Note that this query could be implemented by using a __view__.
+
+#### [query-6](src/queries/music/query-6.sql)
+
+_The identifiers of the albums containing songs that are all by a single singer and containing at least three songs from years preceding the album's year._ To implement this query uses the `INTERSECT` operator between two othe queries in which there is the `COUNT` operation in the `HAVING` statement.
+
+#### [query-7](src/queries/music/query-7.sql)
+
+_The names of the singers who have never sung an entire album alone._ In this query a `VIEW` is implemented to improve the readibility of the query.
+
+#### [query-8](src/queries/music/query-8.sql)
+
+_The names of the singers who have never sung a song as soloists._ This query uses a `VIEW` construct and then intersects two other queries.
+
+
+#### [query-9](src/queries/music/query-9.sql)
+
+_The names of the singers who have only sung as soloists._ A similar apporach is used here as well, relying on a `VIEW` and to the `EXCEPT` set operator.
+
+#### [query-10](src/queries/music/query-10.sql)
