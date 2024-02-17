@@ -4,6 +4,7 @@
 
 /*Only with set operators. */
 
+-- Lists all the USA cities from which there are no international flights departing
 SELECT DISTINCT
     FLIGHTS.DepartureCityName as "City"
 FROM
@@ -16,6 +17,7 @@ WHERE
 
 EXCEPT
 
+-- Lists all the USA cities from which there are international flights departing
 SELECT DISTINCT
     FLIGHTS.DepartureCityName as "City"
 FROM
@@ -39,6 +41,7 @@ FROM
 WHERE 
     DEPARTURE.Country = 'USA' AND
     FLIGHTS.DepartureCityName NOT IN (
+        -- Lists all the USA cities from which there are international flights departing
         SELECT DISTINCT
             FLIGHTS.DepartureCityName as "City"
         FROM
@@ -61,7 +64,8 @@ FROM
     INNER JOIN CITIES AS DEPARTURE ON FLIGHTS.DepartureCityName = DEPARTURE.CityName
 WHERE 
     DEPARTURE.Country = 'USA' AND
-    NOT EXISTS (
+    NOT EXISTS (   
+        -- Lists all the USA cities from which there are international flights departing
         SELECT DISTINCT
             FLIGHTS.DepartureCityName as "City"
         FROM

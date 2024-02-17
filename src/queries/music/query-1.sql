@@ -8,6 +8,7 @@ FROM
     INNER JOIN ALBUM_SONGS ON ALBUMS.AlbumId = ALBUM_SONGS.AlbumId
 WHERE
     ALBUM_SONGS.SongId = (
+        -- Gets all the popular songs
         SELECT
             SongId
         FROM

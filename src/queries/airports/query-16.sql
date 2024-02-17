@@ -8,6 +8,7 @@ FROM
     INNER JOIN AIRPLANE_TYPES ON FLIGHTS_1.AircraftType = AIRPLANE_TYPES.AircraftType
 WHERE
      AIRPLANE_TYPES.AircraftType = (
+        -- Gets the airplane with minimum capacity of a specified city
         SELECT 
             MIN(AIRPLANE_TYPES.AircraftType) AS "Min capacity"
         FROM 

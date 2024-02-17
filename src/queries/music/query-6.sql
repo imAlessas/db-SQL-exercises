@@ -5,6 +5,7 @@
 SELECT
     "Album"
 FROM (
+    -- Lists all the singers per album
     SELECT
         SONG_SINGERS.PersonName AS "Singer",
         ALBUM_SONGS.AlbumId AS "Album"

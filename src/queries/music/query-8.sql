@@ -1,5 +1,6 @@
 /* The names of the singers who have never sung a song as soloists. */
 
+
 -- This view contains the number of the singers who sing in the specific song
 CREATE VIEW SINGERS_PER_SONG AS (
     SELECT
