@@ -142,3 +142,5 @@ _The names of the singers who have never sung a song as soloists._ This query us
 _The names of the singers who have only sung as soloists._ A similar apporach is used here as well, relying on a `VIEW` and to the `EXCEPT` set operator.
 
 #### [query-10](src/queries/music/query-10.sql)
+
+_For each song identifier, find the identifier of the album in which the song was first published and find the year of this publication._
