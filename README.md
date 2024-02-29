@@ -130,7 +130,7 @@ _The identifiers of the albums containing songs that are all by a single singer 
 
 #### [query-7](src/queries/music/query-7.sql)
 
-_The names of the singers who have never sung an entire album alone._ In this query a `VIEW` is implemented to improve the readability of the query.
+_The names of the singers who have never sung an entire album alone._ In this query, a `VIEW`` is implemented to improve the readability of the query.
 
 #### [query-8](src/queries/music/query-8.sql)
 
@@ -139,8 +139,26 @@ _The names of the singers who have never sung a song as soloists._ This query us
 
 #### [query-9](src/queries/music/query-9.sql)
 
-_The names of the singers who have only sung as soloists._ A similar approach is used here as well, relying on a `VIEW` and to the `EXCEPT` set operator.
+_The names of the singers who have only sung as soloists._ A similar approach is used here as well, relying on a `VIEW` and the `EXCEPT`` set operator.
 
 #### [query-10](src/queries/music/query-10.sql)
 
 _For each song identifier, find the identifier of the album in which the song was first published and find the year of this publication._
+
+## Troubleshooting
+
+Some of the queries in this repository may be wrong or unfinished. If you want to help improve the queries, I strongly suggest you follow these instructions.
+
+>[!IMPORTANT]
+>
+> 1. Use the `fork` function to clone the repository to your GitHub account
+>
+> 2. Create a new `branch` and make the __modifications__ and additions to the project
+>
+> 3. Submit a `pull request` and wait for the changes to be reviewed
+
+Additionally, GitHub `issues` can be used to report a minor error.
+
+## Collaborators
+
+* Alessandro Trigolo (GitHub: [@imAlessas](https://github.com/imAlessas))
